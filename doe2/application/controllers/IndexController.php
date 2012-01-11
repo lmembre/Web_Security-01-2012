@@ -3,12 +3,9 @@
 class IndexController extends Zend_Controller_Action
 {
 
-     public function init()
+    public function init()
     {
-      
-        $this->_helper->layout->setLayout('quickstart');
-        
-        
+        /* Initialize action controller here */
     }
 
     public function indexAction()
