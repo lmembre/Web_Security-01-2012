@@ -1,0 +1,14 @@
+<br /><br />
+<div id="view-content">
+	<p>View script for controller <b>Countrylanguage</b> and script/action name <b>index</b></p>
+</div>
+
+Countrylanguage:<br />
+<dl>
+    <?php foreach ($this->languages as $Countrylanguage): ?>
+    <dt title="<?php echo $this->escape($Countrylanguage->id) ?>"><?php echo $this->escape($Countrylanguage->Languages) ?></dt>
+    <dd><?php echo $this->escape($Countrylanguage->IsOfficial) ?></dd>
+    <dd><?php echo $this->escape($Countrylanguage->Percentage) ?></dd>
+    
+    <?php endforeach ?>
+</dl>

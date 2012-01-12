@@ -11,13 +11,13 @@ class CitiesController extends Zend_Controller_Action
     public function indexAction()
     {
         $City = new Application_Model_CityMapper();
-        $this->view->cities = $City->fetchAll();
+        $this->view->cities = $City->fetchOne();
     }
 
     public function addAction()
     {
         $request = $this->getRequest();
-        $form    = new Application_Form_City();
+        $form    = new Application_Form_City(array('captcha'));
  
         if ($this->getRequest()->isPost()) {
             if ($form->isValid($request->getPost())) {

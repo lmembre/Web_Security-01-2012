@@ -16,6 +16,9 @@
           <actionMethod actionName="index"/>
           <actionMethod actionName="add"/>
         </controllerFile>
+        <controllerFile controllerName="Countrylanguage">
+          <actionMethod actionName="index"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="City"/>
@@ -28,9 +31,12 @@
       <modelsDirectory>
         <dbTableDirectory>
           <dbTableFile dbTableName="City"/>
+          <dbTableFile dbTableName="Countrylanguage"/>
         </dbTableDirectory>
         <modelFile modelName="City"/>
         <modelFile modelName="CityMapper"/>
+        <modelFile modelName="CountrylanguageMapper"/>
+        <modelFile modelName="Countrylanguage"/>
       </modelsDirectory>
       <modulesDirectory enabled="false"/>
       <viewsDirectory>
@@ -46,6 +52,9 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Cities">
             <viewScriptFile forActionName="add"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Countrylanguage">
+            <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

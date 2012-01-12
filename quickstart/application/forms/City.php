@@ -3,7 +3,7 @@
 class Application_Form_City extends Zend_Form
 {
 
-    public function init()
+    public function init($ignore = array())
     {
         // Set the method for the display form to POST
         $this->setMethod('post');
