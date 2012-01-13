@@ -11,7 +11,7 @@ class CountrylanguageController extends Zend_Controller_Action
     public function indexAction()
     {
          $Language = new Application_Model_CountrylanguageMapper();
-        $this->view->countrylanguage = $Language->fetchAll();
+        $this->view->countrylanguages = $Language->fetchAll();
     }
 
 

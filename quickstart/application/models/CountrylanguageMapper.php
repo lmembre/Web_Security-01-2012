@@ -41,32 +41,35 @@ class Application_Model_CountrylanguageMapper
         }
     }
  
-  /*  public function find($CountryCode, Application_Model_Countrylanguage $Countrylanguage)
+    public function find($CountryCode)
     {
         $result = $this->getDbTable()->find($CountryCode);
         if (0 == count($result)) {
             return;
         }
         $row = $result->current();
+		$Countrylanguage=new Application_Model_Countrylanguage();
         $Countrylanguage->setCountryCode($row->CountryCode);
-                  $Countrylanguage->setLanguage($row->Language);
+                 $Countrylanguage->setLanguage($row->Language);
                   $Countrylanguage->setIsOfficial($row->IsOfficial);
                   $Countrylanguage->setPercentage($row->Percentage);
+				  
+				  return $Countrylanguage;
         }
- */
+
     public function fetchAll()
     {
         $resultSet = $this->getDbTable()->fetchAll();
         
         $countrylanguage   = array();
-    /*    foreach ($resultSet as $row) {
+        foreach ($resultSet as $row) {
             $Countrylanguage = new Application_Model_Countrylanguage();
             $Countrylanguage->setCountryCode($row->CountryCode);
                   $Countrylanguage->setLanguage($row->Language);
                   $Countrylanguage->setIsOfficial($row->IsOfficial);
                   $Countrylanguage->setPercentage($row->Percentage);
             $countrylanguage[] = $Countrylanguage;
-        }*/
+        }
         return $countrylanguage;
     }
 }

@@ -10,7 +10,7 @@ class IndexController extends Zend_Controller_Action
         /*
          * Change layout on runtime
          */
-        $this->_helper->layout->setLayout('quickstart');
+        //$this->_helper->layout->setLayout('quickstart');
         
         /*
          * Disabled layouts on runtime

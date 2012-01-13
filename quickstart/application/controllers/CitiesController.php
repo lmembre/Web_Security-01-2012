@@ -11,7 +11,7 @@ class CitiesController extends Zend_Controller_Action
     public function indexAction()
     {
         $City = new Application_Model_CityMapper();
-        $this->view->cities = $City->fetchOne();
+        $this->view->cities = $City->fetchAll();
     }
 
     public function addAction()

@@ -51,7 +51,7 @@ class Application_Model_Countrylanguage
     }
 
     public function getIsOfficial() {
-        return $this->_getIsOfficial;
+        return $this->_IsOfficial;
     }
 
     public function getPercentage() {
